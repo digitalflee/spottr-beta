@@ -1,26 +1,33 @@
 import React, { Component } from 'react'
-import { Card, Image } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
 
-export class GymMainPage extends Component {
+export class GymMainPage extends React.Component {
 
-
+    state = {
+        gymName: ''
+    }
+    
+    componentDidMount(){
+    let slug = this.props.match.params.id
+    fetch(`http://localhost:3000/memberships/${slug}` )
+    .then(r => r.json())
+    .then((membership) => {
+       this.setState({
+           gymName: membership.name
+       })
+    })
+    }
 
     render() {
-        console.log(this.props.gym)
+       
         return (
             <div>
-                <Card style={{ width: '18rem' }}>
-  <Card.Body>
-        <Card.Title>{this.props.gym.name}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{this.props.gym.location.address1}</Card.Subtitle>
-    <Card.Text> Available Wellness Services
-        {this.props.gym.categories.map(category => <li>{category.alias}</li>)}
-    </Card.Text>
-    <Card.Link href="#">{this.props.gym.display_phone}</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
-    <Image src={this.props.gym.image_url}/>
+     <Container>
+        <h1>{this.state.gymName}</h1>
+            <h3>Gym Details</h3>
+            <h3>Gym Images</h3>
+            <h3>Gym Reviews</h3>
+     </Container>
             </div>
         )
     }

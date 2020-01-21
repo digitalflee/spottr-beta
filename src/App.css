@@ -37,3 +37,16 @@
   }
 }
 
+.link {
+ color: black;
+}
+.link:hover {
+  color: gray
+}
+
+/* .button {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+} */

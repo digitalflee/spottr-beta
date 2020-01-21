@@ -1,12 +1,15 @@
 
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Link } from 'react-router-dom'
 import Landing from './Landing'
 import Map from './components/Map'
 import Error from './components/Error'
 import UserProfile from './components/UserProfile'
+import GymMainPage from './components/GymMainPage'
+import Navvy from './components/Navvy'
+import GymPostFetch from './components/GymPostFetch'
+import MoreInfoPage from './components/MoreInfoPage'
 
-let token = `VjbnNFX5bH9MssRF06uBDC5mSnLcv-N_VRQ2lrSfygirv49iHr1kRMcZ7ycyRqvnSze0nd6WnMF24uYyKA51moLiMdAd_cFqiQfaec_4ge0eeDFSbtF1d4Q0ztwYXnYx`
 
 
 export class App extends Component {
@@ -15,22 +18,13 @@ export class App extends Component {
     gyms: []
   }
 
-  // componentDidMount(){
-  //  fetch(`http://localhost:3000/businesses`)
-  //  .then(r => r.json())
-  //  .then((gymData) => {
-  //    this.setState({
-  //      gyms: gymData
-  //     })
-  //   })
-  // }
 
-  
   render() {
-    
-    
+  
     return (
       <div>
+       
+          <Navvy /> 
         <Switch>
         <Route path="/" exact component={ Landing }/>
         <Route 
@@ -38,6 +32,9 @@ export class App extends Component {
         component={Map}
         /> 
         <Route path="/user-profile" component={UserProfile} />
+        <Route path="/gym-main-page/:id" component={GymMainPage} />
+        <Route path="/more-info/:id" component={MoreInfoPage} />
+        <Route path="/gym-logo-index" component={GymPostFetch} />
         <Route component={Error}/>
         </Switch>
       </div>
