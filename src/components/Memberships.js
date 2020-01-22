@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import {Link, Switch, Route} from 'react-router-dom'
-import {Card, Button, Container} from 'react-bootstrap'
-import GymMainPage from './GymMainPage'
-import { render } from 'react-dom'
+
 
 export class Memberships extends Component {
 
@@ -27,7 +25,7 @@ export class Memberships extends Component {
         return (
             
                 this.state.memberships.map(membership => <div key={membership.id}>
-                    <Link  to={`/gym-main-page/${membership.id}`}>view: {membership.name} </Link>
+                    <Link  to={`/gym-membership-page/${membership.id}`} style={{color: 'black'}}><strong> {membership.name} </strong></Link>
                     </div>)
         
         )

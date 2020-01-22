@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Modal, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import GymMainPage from './GymMainPage'
+import GymMembershipPage from './GymMembershipPage'
 
 export class ModalLocation extends React.Component {
 

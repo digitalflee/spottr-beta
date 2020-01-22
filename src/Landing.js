@@ -14,7 +14,7 @@ export class Landing extends Component {
                 <Card className="bg-dark text-white">
   <Card.Img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rise-gym-wework046-hdr-edit-full-res-copy-1549045104.jpg" alt="Card image" fluid />
   <Card.ImgOverlay>
-    <Card.Title>Find A Gym Based On Your Needs</Card.Title>
+    <Card.Title>YOUR FITNESS ASSISTANT</Card.Title>
       <Button variant='light'>
 
     <Link className='button' to="/user-profile">Enter</Link>

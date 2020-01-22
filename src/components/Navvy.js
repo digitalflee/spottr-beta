@@ -9,15 +9,15 @@ export class Navvy extends Component {
             <div>
 
         <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             SPOTTR
             </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-            <Link to="/user-profile" style={{ color: '#000' }}>My Profile</Link>
-             <span>' '</span>
-            <Link to="/gym-map" style={{ color: '#000' }}>Find Gyms</Link>
+            <Link to="/user-profile" style={{ color: '#000', padding: 4 }}>My Profile</Link>
+            <Link to="/gym-map" style={{ color: '#000', padding: 4 }}>Find Gyms</Link>
+            <Link to="/exercises" style={{ color: '#000', padding: 4 }}>Goals</Link>
             </Nav>
         </Navbar.Collapse>
         </Navbar>

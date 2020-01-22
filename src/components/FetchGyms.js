@@ -4,7 +4,7 @@ import {CardColumns, Button, Card, Row, Container} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import { render } from '@testing-library/react'
 import ModalLocation from './ModalLocation'
-import GymMainPage from './GymMainPage'
+
 
 
 
@@ -88,7 +88,7 @@ export class FetchGyms extends React.Component {
                         .then(console.log)
                    }>
                        Add To Memberships</Button>
-                      
+                      <Link to={`/more-info/${gym.id}`} style={{color: 'black'}}>View Location</Link>
                 </Card>
                 )
                 
