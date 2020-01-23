@@ -9,67 +9,65 @@ export class UserProfile extends Component {
         return (
             <div>
                 <Nav className="justify-content-center" activeKey="/home">
-                   <h1><strong>USER NAME</strong></h1> 
+                   <h1><strong>KEN</strong></h1> 
                     </Nav>
-                <Container>
-                    <Row>
-                        <Col>
-                        <Image src="https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" roundedCircle />
-                        </Col>
-                    </Row>
-                </Container>
-                <br/>
+                        <Row>
+                            <Col></Col>
+                            <Col xs={13}><Image src={require('../assets/3d/k-balenciaga.jpg')} roundedCircle thumbnail/></Col>
+                            <Col></Col>
+                        </Row>
+                        <br/>
+                        <Container>
+                            <h2>profile pics</h2>
+                        </Container>
+
                 <Container >
-                    
-                    <h1>View Memberships</h1>
+     
                     <Row>
+                    
                         <Col>
-                  <Memberships />
-                        </Col>
-                        <Col>
+                        <br/>
                         <CardGroup>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardGroup>
-                        </Col>
+                            <Card>
+                                <Card.Img variant="top" src={require('../assets/3d/ken-cycle-2.gif')} />
+                                <Card.Body>
+                                <Card.Title>Burning off this Turkey Stuffing.</Card.Title>
+                                
+                                </Card.Body>
+                                <Card.Footer>
+                                <small className="text-muted">November 29th, 2019</small>
+                                </Card.Footer>
+                            </Card>
+                            
+                            <Card>
+                                <Card.Img variant="top" src={require('../assets/3d/ken-handstand.jpg')} />
+                                <Card.Body>
+                                <Card.Title>Attempting to push the Earth further from the Sun.</Card.Title>
+                                
+                                </Card.Body>
+                                <Card.Footer>
+                                <small className="text-muted">2 days ago</small>
+                                </Card.Footer>
+                            </Card>
+                            
+                            <Card>
+                                <Card.Img variant="top" src={require('../assets/3d/ken-pushups-01.gif')} />
+                                <Card.Body>
+                                <Card.Title>Another Session in the Hyperbolic Time Chamber</Card.Title>
+                               
+                                </Card.Body>
+                                <Card.Footer>
+                                <small className="text-muted">1 lifetime ago</small>
+                                </Card.Footer>
+                            </Card>
+                            <Container>
+                            <h1>View Memberships</h1>
+                            </Container>
+                                     <Col>
+                                        <Memberships />
+                                    </Col>
+                            </CardGroup>
+                         </Col>
                     </Row>
                 </Container>
             </div>

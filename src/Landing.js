@@ -12,7 +12,7 @@ export class Landing extends Component {
             <div>
                 {/* <Navvy /> */}
                 <Card className="bg-dark text-white">
-  <Card.Img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rise-gym-wework046-hdr-edit-full-res-copy-1549045104.jpg" alt="Card image" fluid />
+  <Card.Img src={require(`./assets/3d/spottr-landing-02.gif`)} alt="Card image" fluid />
   <Card.ImgOverlay>
     <Card.Title>YOUR FITNESS ASSISTANT</Card.Title>
       <Button variant='light'>
@@ -29,4 +29,4 @@ export class Landing extends Component {
 
 export default Landing
 
-                
+// "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rise-gym-wework046-hdr-edit-full-res-copy-1549045104.jpg"
